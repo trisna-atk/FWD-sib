@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Data Diri</title>
+</head>
+<body>
+    <h1>Form Pendaftaran Data Diri</h1>
+    <form action="" method="POST" a>
+    <!-- Nama lengkap, harus diisi dan minimal 3 karakter -->
+    <label for="fullname">Nama Lengkap:</label>
+    <input type="text" id="fullname" name="fullname" required placeholder="Masukkan Nama Lengkap" minlength="3">
+    <br> <br>
+
+    <!-- Email valid dan harus diisi -->
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required placeholder="Masukkan Email">
+    <br> <br>
+
+    <!-- password, minimal 8 karakter, harus diisi -->
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required minlength="8" placeholder="masukkan password">
+    <br> <br>
+    
+    <!-- tanggal lahir, harus diisi -->
+    <label for="tanggallahir">Tanggal Lahir:</label>
+    <input type="date" name="tanggallahir" id="tanggallahir" required>
+    <br> <br>
+
+    <!-- umur,pengguna harus minimal 18 tahun, harus diisi  -->
+    <label for="umur">Umur:</label>
+    <input type="number" name="umur" id="umur" required minlength="18">
+    <br> <br>
+
+    <!-- Jenis Kelamin, pilihan laki-laki dan perempuan, wajib diisi -->
+    <label for=""><input type="radio" name="gender" value="male" required>Laki-Laki</label>
+    <label for=""><input type="radio" name="gender" value="female" required>Perempuan</label>
+    <br> <br>
+
+    <!-- Nomor telepon, hanya angka, dengan panjang 10-13 digit -->
+    <label for="phone">Nomor Telepon:</label>
+    <input type="tell" name="phone" id="phone" required minlength="10" maxlength="13" placeholder="Masukkan nomor telepon">
+    <br> <br>
+
+    <!-- unggah foto, opsinal -->
+    <label for="photo">Unggah Foto Profil:</label>
+    <input type="checkbox" name="photo" id="photo"> Saya sudah unggah foto profil
+    <br> <br>
+
+    <!-- persetujuan dan ketentuan -->
+    <label>
+        <input type="checkbox" name="terms" id="terms" required> Saya Setuju dengan Syarat dan ketentuan
+    </label>
+    <br> <br>
+
+    <!-- Tombol Submit -->
+     <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
